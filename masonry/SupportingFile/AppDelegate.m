@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  TestProject
+//  masonry
 //
-//  Created by Pro on 2018/7/3.
+//  Created by Pro on 2018/6/29.
 //  Copyright © 2018年 Pro. All rights reserved.
 //
 
@@ -14,8 +14,14 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

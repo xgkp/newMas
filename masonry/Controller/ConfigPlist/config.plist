@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appid</key>
+	<string>justdoatest</string>
+	<key>wechatHost</key>
+	<string>http://124.225.159.153:8081/</string>
+</dict>
+</plist>
