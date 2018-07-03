@@ -444,9 +444,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQAV5S53MC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/macbookpro/Desktop/masonary/masonry/masonry/SupportingFile/Prefix.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/masonry/SupportingFile/Prefix.pch";
 				INFOPLIST_FILE = masonry/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Demo.masonry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,9 +464,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQAV5S53MC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/macbookpro/Desktop/masonary/masonry/masonry/SupportingFile/Prefix.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/masonry/SupportingFile/Prefix.pch";
 				INFOPLIST_FILE = masonry/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Demo.masonry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
