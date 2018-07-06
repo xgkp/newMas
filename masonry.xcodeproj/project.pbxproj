@@ -11,6 +11,9 @@
 		15242F5920EE04CD00363F8B /* TestCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15242F5720EE04CD00363F8B /* TestCellViewController.xib */; };
 		15722A7120EF02F4001AEAC5 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15722A6F20EF02F4001AEAC5 /* SliderViewController.m */; };
 		15722A7220EF02F4001AEAC5 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15722A7020EF02F4001AEAC5 /* SliderViewController.xib */; };
+		15722A7620EF0C9D001AEAC5 /* RS_SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15722A7520EF0C9D001AEAC5 /* RS_SliderView.m */; };
+		15722A7C20EF0D7A001AEAC5 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15722A7820EF0D7A001AEAC5 /* FBShimmeringLayer.m */; };
+		15722A7D20EF0D7A001AEAC5 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15722A7B20EF0D7A001AEAC5 /* FBShimmeringView.m */; };
 		15CFBAE320E617C4008EC933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBAE220E617C4008EC933 /* AppDelegate.m */; };
 		15CFBAE920E617C5008EC933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAE720E617C5008EC933 /* Main.storyboard */; };
 		15CFBAEB20E617C6008EC933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAEA20E617C6008EC933 /* Assets.xcassets */; };
@@ -34,6 +37,13 @@
 		15722A6E20EF02F4001AEAC5 /* SliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		15722A6F20EF02F4001AEAC5 /* SliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		15722A7020EF02F4001AEAC5 /* SliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
+		15722A7420EF0C9D001AEAC5 /* RS_SliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RS_SliderView.h; sourceTree = "<group>"; };
+		15722A7520EF0C9D001AEAC5 /* RS_SliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RS_SliderView.m; sourceTree = "<group>"; };
+		15722A7720EF0D7A001AEAC5 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		15722A7820EF0D7A001AEAC5 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		15722A7920EF0D7A001AEAC5 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		15722A7A20EF0D7A001AEAC5 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		15722A7B20EF0D7A001AEAC5 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
 		15CFBADE20E617C4008EC933 /* masonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masonry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CFBAE120E617C4008EC933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15CFBAE220E617C4008EC933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,11 +95,26 @@
 		15722A6D20EF02CB001AEAC5 /* Slider */ = {
 			isa = PBXGroup;
 			children = (
+				15722A7320EF0C7A001AEAC5 /* Tools */,
 				15722A6E20EF02F4001AEAC5 /* SliderViewController.h */,
 				15722A6F20EF02F4001AEAC5 /* SliderViewController.m */,
 				15722A7020EF02F4001AEAC5 /* SliderViewController.xib */,
 			);
 			path = Slider;
+			sourceTree = "<group>";
+		};
+		15722A7320EF0C7A001AEAC5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				15722A7720EF0D7A001AEAC5 /* FBShimmering.h */,
+				15722A7920EF0D7A001AEAC5 /* FBShimmeringLayer.h */,
+				15722A7820EF0D7A001AEAC5 /* FBShimmeringLayer.m */,
+				15722A7A20EF0D7A001AEAC5 /* FBShimmeringView.h */,
+				15722A7B20EF0D7A001AEAC5 /* FBShimmeringView.m */,
+				15722A7420EF0C9D001AEAC5 /* RS_SliderView.h */,
+				15722A7520EF0C9D001AEAC5 /* RS_SliderView.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		15CFBAD520E617C4008EC933 = {
@@ -324,6 +349,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CFBAF120E617C6008EC933 /* main.m in Sources */,
+				15722A7D20EF0D7A001AEAC5 /* FBShimmeringView.m in Sources */,
+				15722A7620EF0C9D001AEAC5 /* RS_SliderView.m in Sources */,
+				15722A7C20EF0D7A001AEAC5 /* FBShimmeringLayer.m in Sources */,
 				15242F5820EE04CD00363F8B /* TestCellViewController.m in Sources */,
 				15CFBAFA20E618FB008EC933 /* MainViewController.m in Sources */,
 				15722A7120EF02F4001AEAC5 /* SliderViewController.m in Sources */,

@@ -38,9 +38,9 @@
     self.tableView.delegate = self;
     
     self.titleNames = @[
-                      @"config.plist文件创建和使用",
+                      @"config.plist文件创建和使用 OK",
                       @"masornyProjectTest",
-                      @"iOS滑块功能实现"
+                      @"iOS滑块功能实现 OK"
                       ];
     
     self.classNames = @[@"ConfigPlistController",
