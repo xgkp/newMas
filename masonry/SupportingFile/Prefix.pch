@@ -16,6 +16,10 @@
 
 #import "MasonryTestController.h"
 
+#import "TestCellViewController.h"
+
+#import "SliderViewController.h"
+
 
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>

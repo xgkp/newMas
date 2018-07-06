@@ -10,7 +10,9 @@
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property(nonatomic,strong)NSArray * mutArray;
+
+@property (nonatomic, strong) NSArray *classNames;
+@property (nonatomic,strong) NSArray * titleNames;
 
 @end
 
@@ -35,16 +37,22 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    self.mutArray = @[
+    self.titleNames = @[
                       @"config.plist文件创建和使用",
-                      @"masornyProjectTest"
+                      @"masornyProjectTest",
+                      @"iOS滑块功能实现"
                       ];
+    
+    self.classNames = @[@"ConfigPlistController",
+                        @"MasonryTestController",
+                        @"SliderViewController"
+                        ];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell  * cell = [[UITableViewCell alloc]init];
-    cell.textLabel.text = self.mutArray[indexPath.section];
+    cell.textLabel.text = self.titleNames[indexPath.section];
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,7 +62,7 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-   return self.mutArray.count;
+   return self.titleNames.count;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -62,15 +70,16 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0) {
-        ConfigPlistController * vc = [[ConfigPlistController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.section == 1)
-    {
-        MasonryTestController * vc = [[MasonryTestController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    }
+    NSString *className = self.classNames[indexPath.section];
+    
+    UIViewController *subViewController = [[NSClassFromString(className) alloc] init];
+    
+    subViewController.title = self.classNames[indexPath.section];
+    
+    [self.navigationController pushViewController:subViewController animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

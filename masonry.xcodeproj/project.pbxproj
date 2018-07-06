@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15242F5820EE04CD00363F8B /* TestCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15242F5620EE04CD00363F8B /* TestCellViewController.m */; };
+		15242F5920EE04CD00363F8B /* TestCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15242F5720EE04CD00363F8B /* TestCellViewController.xib */; };
+		15722A7120EF02F4001AEAC5 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15722A6F20EF02F4001AEAC5 /* SliderViewController.m */; };
+		15722A7220EF02F4001AEAC5 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15722A7020EF02F4001AEAC5 /* SliderViewController.xib */; };
 		15CFBAE320E617C4008EC933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBAE220E617C4008EC933 /* AppDelegate.m */; };
 		15CFBAE920E617C5008EC933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAE720E617C5008EC933 /* Main.storyboard */; };
 		15CFBAEB20E617C6008EC933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAEA20E617C6008EC933 /* Assets.xcassets */; };
@@ -20,11 +24,16 @@
 		15FBEE9220EB01B1000624FD /* ConfigPlistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FBEE9020EB01B1000624FD /* ConfigPlistController.xib */; };
 		15FBEE9920EB1185000624FD /* MasonryTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBEE9720EB1185000624FD /* MasonryTestController.m */; };
 		15FBEE9A20EB1185000624FD /* MasonryTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FBEE9820EB1185000624FD /* MasonryTestController.xib */; };
-		15FBEE9D20EB159B000624FD /* EMRushDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBEE9C20EB159A000624FD /* EMRushDetailView.m */; };
 		435C5F46CC78EFCD048799C9 /* libPods-masonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F05A504E175B6B3B189D77 /* libPods-masonry.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15242F5520EE04CD00363F8B /* TestCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCellViewController.h; sourceTree = "<group>"; };
+		15242F5620EE04CD00363F8B /* TestCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCellViewController.m; sourceTree = "<group>"; };
+		15242F5720EE04CD00363F8B /* TestCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCellViewController.xib; sourceTree = "<group>"; };
+		15722A6E20EF02F4001AEAC5 /* SliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
+		15722A6F20EF02F4001AEAC5 /* SliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		15722A7020EF02F4001AEAC5 /* SliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
 		15CFBADE20E617C4008EC933 /* masonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masonry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CFBAE120E617C4008EC933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15CFBAE220E617C4008EC933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,8 +55,6 @@
 		15FBEE9620EB1185000624FD /* MasonryTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryTestController.h; sourceTree = "<group>"; };
 		15FBEE9720EB1185000624FD /* MasonryTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryTestController.m; sourceTree = "<group>"; };
 		15FBEE9820EB1185000624FD /* MasonryTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasonryTestController.xib; sourceTree = "<group>"; };
-		15FBEE9B20EB159A000624FD /* EMRushDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMRushDetailView.h; sourceTree = "<group>"; };
-		15FBEE9C20EB159A000624FD /* EMRushDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMRushDetailView.m; sourceTree = "<group>"; };
 		26F05A504E175B6B3B189D77 /* libPods-masonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-masonry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC8AA3DAF5AEB542165A16B /* Pods-masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masonry.release.xcconfig"; path = "Pods/Target Support Files/Pods-masonry/Pods-masonry.release.xcconfig"; sourceTree = "<group>"; };
 		B612F33D5145D0DDF0C4CF78 /* Pods-masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masonry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-masonry/Pods-masonry.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +72,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15242F5420EE048D00363F8B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				15242F5520EE04CD00363F8B /* TestCellViewController.h */,
+				15242F5620EE04CD00363F8B /* TestCellViewController.m */,
+				15242F5720EE04CD00363F8B /* TestCellViewController.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		15722A6D20EF02CB001AEAC5 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				15722A6E20EF02F4001AEAC5 /* SliderViewController.h */,
+				15722A6F20EF02F4001AEAC5 /* SliderViewController.m */,
+				15722A7020EF02F4001AEAC5 /* SliderViewController.xib */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
 		15CFBAD520E617C4008EC933 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +138,8 @@
 		15CFBAFD20E61957008EC933 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				15722A6D20EF02CB001AEAC5 /* Slider */,
+				15242F5420EE048D00363F8B /* TableView */,
 				15FBEE9420EB0316000624FD /* Main */,
 				15FBEE9320EB02F3000624FD /* ConfigPlist */,
 				15FBEE9520EB1146000624FD /* Masaonry */,
@@ -151,8 +180,6 @@
 		15FBEE9520EB1146000624FD /* Masaonry */ = {
 			isa = PBXGroup;
 			children = (
-				15FBEE9B20EB159A000624FD /* EMRushDetailView.h */,
-				15FBEE9C20EB159A000624FD /* EMRushDetailView.m */,
 				15FBEE9620EB1185000624FD /* MasonryTestController.h */,
 				15FBEE9720EB1185000624FD /* MasonryTestController.m */,
 				15FBEE9820EB1185000624FD /* MasonryTestController.xib */,
@@ -238,6 +265,8 @@
 			files = (
 				15CFBAEE20E617C6008EC933 /* LaunchScreen.storyboard in Resources */,
 				15FBEE9A20EB1185000624FD /* MasonryTestController.xib in Resources */,
+				15722A7220EF02F4001AEAC5 /* SliderViewController.xib in Resources */,
+				15242F5920EE04CD00363F8B /* TestCellViewController.xib in Resources */,
 				15CFBAEB20E617C6008EC933 /* Assets.xcassets in Resources */,
 				15CFBAE920E617C5008EC933 /* Main.storyboard in Resources */,
 				15CFBAFB20E618FB008EC933 /* MainViewController.xib in Resources */,
@@ -295,12 +324,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CFBAF120E617C6008EC933 /* main.m in Sources */,
+				15242F5820EE04CD00363F8B /* TestCellViewController.m in Sources */,
 				15CFBAFA20E618FB008EC933 /* MainViewController.m in Sources */,
+				15722A7120EF02F4001AEAC5 /* SliderViewController.m in Sources */,
 				15CFBAE320E617C4008EC933 /* AppDelegate.m in Sources */,
 				15D7642B20EA73D5001E99B0 /* AppConfigUtils.m in Sources */,
 				15FBEE9120EB01B1000624FD /* ConfigPlistController.m in Sources */,
 				15FBEE9920EB1185000624FD /* MasonryTestController.m in Sources */,
-				15FBEE9D20EB159B000624FD /* EMRushDetailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
